@@ -1,0 +1,14 @@
+serial_driver_node:
+  ros__parameters:
+    port: "/dev/ttyACM0"
+    baudrate: 9600
+    update_rate: 20 # Hz
+    
+odom_publisher:
+  ros__parameters:
+    port: "/dev/ttyACM0"
+    baudrate: 9600
+    wheel_separation: 0.182
+    wheel_radius: 0.0325
+    ticks_per_rev: 1768
+    update_rate: 20.0
