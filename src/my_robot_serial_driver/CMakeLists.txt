@@ -31,8 +31,5 @@ install(PROGRAMS
   DESTINATION lib/${PROJECT_NAME}
 )
 
-install(DIRECTORY urdf rviz
-  DESTINATION share/${PROJECT_NAME}
-)
 
 ament_package()
