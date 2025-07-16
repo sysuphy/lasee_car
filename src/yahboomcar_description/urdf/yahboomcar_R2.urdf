@@ -88,7 +88,7 @@
     name="back_right_joint"
     type="continuous">
     <origin
-      xyz="-0.11607 -0.08425 0.0125"
+      xyz="-0.0935 -0.0915 0.02"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -141,7 +141,7 @@
     name="back_left_joint"
     type="continuous">
     <origin
-      xyz="-0.11607 0.08425 0.0125"
+      xyz="0.0935 -0.0915 0.02"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -194,7 +194,7 @@
     name="front_left_steer_joint"
     type="revolute">
     <origin
-      xyz="0.11922 0.065 0.0262"
+      xyz="0.0935 0.0915 0.02"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -305,7 +305,7 @@
     name="front_right_steer_joint"
     type="revolute">
     <origin
-      xyz="0.11922 -0.065 0.0242"
+      xyz="0.0935 -0.0915 0.02"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -373,59 +373,6 @@
       xyz="0 1 0" />
   </joint>
   <link
-    name="camera_link">
-    <inertial>
-      <origin
-        xyz="-0.0022507 -5.8908E-06 -0.021168"
-        rpy="0 0 0" />
-      <mass
-        value="0.22414" />
-      <inertia
-        ixx="0.00039172"
-        ixy="2.2482E-08"
-        ixz="4.3677E-08"
-        iyy="4.6625E-05"
-        iyz="1.3858E-10"
-        izz="0.0004106" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://yahboomcar_description/meshes/camera_link_R2.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.082353 0.082353 0.082353 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://yahboomcar_description/meshes/camera_link_R2.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="camera_joint"
-    type="fixed">
-    <origin
-      xyz="0.095117 0 0.09955"
-      rpy="0 0.0057171 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="camera_link" />
-    <axis
-      xyz="0 0 0" />
-  </joint>
-  <link
     name="laser_link">
     <inertial>
       <origin
@@ -464,12 +411,12 @@
           filename="package://yahboomcar_description/meshes/laser_link_R2.STL" />
       </geometry>
     </collision>
-  </link>
-  <joint
+    </link>
+    <joint
     name="laser_joint"
     type="fixed">
     <origin
-      xyz="0.012548 0 0.1311"
+      xyz="0 0.0065 0.155"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -479,3 +426,4 @@
       xyz="0 0 0" />
   </joint>
 </robot>
+ 

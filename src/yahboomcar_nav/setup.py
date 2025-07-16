@@ -27,7 +27,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'scan_filter = yahboomcar_nav.scan_filter:main'
+            'scan_filter = yahboomcar_nav.scan_filter:main',
+            'initial_pose_pub = yahboomcar_nav.initial_pose_pub:main',
+            'send_goal = yahboomcar_nav.send_goal:main',
         ],
     },
 )

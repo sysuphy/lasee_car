@@ -11,7 +11,7 @@ from launch.conditions import IfCondition, UnlessCondition
 from launch.substitutions import Command, LaunchConfiguration
 from launch.actions import LogInfo
 from launch_ros.parameter_descriptions import ParameterValue
-
+from launch.actions import TimerAction
 
 def generate_launch_description():
     package_path = get_package_share_directory('yahboomcar_nav')
@@ -62,7 +62,24 @@ def generate_launch_description():
         arguments=['-d', LaunchConfiguration('rvizconfig')],
          )
     
-    
+    initial_pose_node = TimerAction(
+    period=3.0,  # 启动 3 秒后发布
+    actions=[
+        Node(
+            package='yahboomcar_nav',
+            executable='initial_pose_pub',
+            name='initial_pose_publisher',
+            output='screen'
+            )
+            ]
+          )
+    send_goal_node = Node(
+        package='yahboomcar_nav',
+        executable='send_goal',
+        name='goal_sender',
+        output='screen'
+          )
+
 
     return LaunchDescription([
         gui_arg,
@@ -85,8 +102,9 @@ def generate_launch_description():
                 'use_sim_time': use_sim_time,
                 'params_file': nav2_param_path}.items(),
         ),
+        
         rviz_arg,
         rviz_node,
-       
+        send_goal_node,
         
     ])

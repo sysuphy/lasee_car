@@ -57,18 +57,36 @@ class OdomPublisher(Node):
 
     def read_serial(self):
         try:
-           now = self.get_clock().now()
-           dt = (now - self.last_time).nanoseconds / 1e9
-           self.last_time = now
+            line = self.serial_port.readline().decode('utf-8').strip()
+            self.get_logger().info(f"Received line: [{line}]")  # ✅ 添加
 
-           # 模拟编码器跳变
-           fake_left = self.last_left_ticks + 10
-           fake_right = self.last_right_ticks + 12  # 模拟轻微转向
-           self.update_odometry(fake_left, fake_right, dt, now)
+            if not line:
+                return
+            parts = line.split(',')
+            if len(parts) != 2:
+                self.get_logger().warn(f"Invalid serial data: {line}")
+                return
 
-           self.get_logger().info("✅ 模拟数据已发送。")
+            left_ticks = int(parts[0])
+            right_ticks = int(parts[1])
+
+            now = self.get_clock().now()
+            dt = (now - self.last_time).nanoseconds / 1e9
+            self.last_time = now
+
+            if self.first_read:
+                self.last_left_ticks = left_ticks
+                self.last_right_ticks = right_ticks
+                self.first_read = False
+                return
+
+            self.update_odometry(left_ticks, right_ticks, dt, now)
+           
+            
+            
+
         except Exception as e:
-           self.get_logger().error(f"Serial read error: {e}")
+            self.get_logger().error(f"Serial read error: {e}")
 
 
 
