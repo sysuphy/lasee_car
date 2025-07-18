@@ -1,0 +1,24 @@
+[0.120s] Invoking command in '/home/zhugeliang/ydlidar_ws/src/build/virtual_obstacle_layer': CMAKE_PREFIX_PATH=/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller /usr/bin/cmake /home/zhugeliang/ydlidar_ws/src/virtual_obstacle_layer -DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/virtual_obstacle_layer
+[0.866s] -- The C compiler identification is GNU 9.4.0
+[1.424s] -- The CXX compiler identification is GNU 9.4.0
+[1.451s] -- Check for working C compiler: /usr/bin/cc
+[1.902s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.912s] -- Detecting C compiler ABI info
+[2.772s] -- Detecting C compiler ABI info - done
+[2.828s] -- Detecting C compile features
+[2.832s] -- Detecting C compile features - done
+[2.852s] -- Check for working CXX compiler: /usr/bin/c++
+[3.514s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.524s] -- Detecting CXX compiler ABI info
+[4.283s] -- Detecting CXX compiler ABI info - done
+[4.366s] -- Detecting CXX compile features
+[4.369s] -- Detecting CXX compile features - done
+[4.411s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.734s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.734s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.534s] -- Found nav2_costmap_2d: 0.4.7 (/opt/ros/foxy/share/nav2_costmap_2d/cmake)
+[6.973s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.055s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[8.711s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[9.156s] -- Found FastRTPS: /opt/ros/foxy/include  
+[10.146s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp

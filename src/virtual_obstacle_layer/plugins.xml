@@ -1,0 +1,10 @@
+<library path="virtual_obstacle_layer">
+  <class
+    name="virtual_obstacle_layer/VirtualObstacleLayer"
+    type="virtual_obstacle_layer::VirtualObstacleLayer"
+    base_class_type="nav2_costmap_2d::Layer">
+    <description>
+      A layer that adds virtual circular obstacles to the costmap.
+    </description>
+  </class>
+</library>

@@ -1,0 +1,3 @@
+virtual_obstacle_layer:
+  ros__parameters:
+    enabled: true

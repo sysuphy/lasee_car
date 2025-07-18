@@ -1,0 +1,238 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						7
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						6
+					]
+				},
+				{
+					"build" : "gridfastslam",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "gridfastslam",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "scanmatcher",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "scanmatcher",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "sensor",
+					"childIndexes" : 
+					[
+						4,
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "sensor"
+				},
+				{
+					"build" : "sensor/sensor_base",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "sensor/sensor_base",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "sensor/sensor_odometry",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "sensor/sensor_odometry",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "sensor/sensor_range",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "sensor/sensor_range",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "utils",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "utils",
+					"targetIndexes" : 
+					[
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+					"name" : "openslam_gmapping",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "gridfastslam::@b466b67c1e090f839aa0",
+					"jsonFile" : "target-gridfastslam-72b664550948c2f069b6.json",
+					"name" : "gridfastslam",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openslam_gmapping_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openslam_gmapping_uninstall-e7b82f5f7cb7910c704f.json",
+					"name" : "openslam_gmapping_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "scanmatcher::@4a4377e2c98a1d37f5d1",
+					"jsonFile" : "target-scanmatcher-f3d3359978a44f16dac7.json",
+					"name" : "scanmatcher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "sensor_base::@a74caf6a98cf18a90ae8",
+					"jsonFile" : "target-sensor_base-4c48319a5a89947cd557.json",
+					"name" : "sensor_base",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "sensor_odometry::@9cc8476a6c03ee59c73a",
+					"jsonFile" : "target-sensor_odometry-0eb09f74f0a2ef26453a.json",
+					"name" : "sensor_odometry",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "sensor_range::@8df6274ce75d261f7a53",
+					"jsonFile" : "target-sensor_range-83f26391c8994b2d295b.json",
+					"name" : "sensor_range",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-2293829d1ca006e07cef.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "utils::@c810615cce0f7acb82dc",
+					"jsonFile" : "target-utils-9ffe2d2981d367b1f1a6.json",
+					"name" : "utils",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping",
+		"source" : "/home/zhugeliang/ydlidar_ws/src/openslam_gmapping"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

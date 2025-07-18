@@ -1,0 +1,303 @@
+[0.000000] (-) TimerEvent: {}
+[0.000954] (motor_controller) JobQueued: {'identifier': 'motor_controller', 'dependencies': OrderedDict()}
+[0.001232] (my_robot_serial_driver) JobQueued: {'identifier': 'my_robot_serial_driver', 'dependencies': OrderedDict()}
+[0.002050] (openslam_gmapping) JobQueued: {'identifier': 'openslam_gmapping', 'dependencies': OrderedDict()}
+[0.002528] (virtual_obstacle_layer) JobQueued: {'identifier': 'virtual_obstacle_layer', 'dependencies': OrderedDict()}
+[0.002981] (yahboomcar_description) JobQueued: {'identifier': 'yahboomcar_description', 'dependencies': OrderedDict()}
+[0.003143] (yahboomcar_nav) JobQueued: {'identifier': 'yahboomcar_nav', 'dependencies': OrderedDict()}
+[0.003392] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.003521] (slam_gmapping) JobQueued: {'identifier': 'slam_gmapping', 'dependencies': OrderedDict([('openslam_gmapping', '/home/zhugeliang/ydlidar_ws/src/install/openslam_gmapping')])}
+[0.003623] (openslam_gmapping) JobStarted: {'identifier': 'openslam_gmapping'}
+[0.044130] (motor_controller) JobStarted: {'identifier': 'motor_controller'}
+[0.072918] (my_robot_serial_driver) JobStarted: {'identifier': 'my_robot_serial_driver'}
+[0.099327] (-) TimerEvent: {}
+[0.101519] (virtual_obstacle_layer) JobStarted: {'identifier': 'virtual_obstacle_layer'}
+[0.139296] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'cmake'}
+[0.141317] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '/home/zhugeliang/ydlidar_ws/src/openslam_gmapping', '-DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/openslam_gmapping'], 'cwd': '/home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zhugeliang'), ('SSH_CLIENT', '192.168.137.1 2297 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zhugeliang/ydlidar_ws/install/openslam_gmapping/lib:/home/zhugeliang/ydlidar_ws/install/motor_controller/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/zhugeliang'), ('OLDPWD', '/home/zhugeliang'), ('SSH_TTY', '/dev/pts/0'), ('LIDAR_TYPE', 'x3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'zhugeliang'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping'), ('SSH_CONNECTION', '192.168.137.1 2297 192.168.137.233 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/nav2_common/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller')]), 'shell': False}
+[0.161030] (motor_controller) JobProgress: {'identifier': 'motor_controller', 'progress': 'cmake'}
+[0.163805] (motor_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/zhugeliang/ydlidar_ws/src/ros2_control_custom_hardware_interface/motor_controller/motor_controller', '-DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/motor_controller'], 'cwd': '/home/zhugeliang/ydlidar_ws/src/build/motor_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zhugeliang'), ('SSH_CLIENT', '192.168.137.1 2297 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zhugeliang/ydlidar_ws/install/openslam_gmapping/lib:/home/zhugeliang/ydlidar_ws/install/motor_controller/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/zhugeliang'), ('OLDPWD', '/home/zhugeliang'), ('SSH_TTY', '/dev/pts/0'), ('LIDAR_TYPE', 'x3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'zhugeliang'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/zhugeliang/ydlidar_ws/src/build/motor_controller'), ('SSH_CONNECTION', '192.168.137.1 2297 192.168.137.233 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/nav2_common/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller')]), 'shell': False}
+[0.177815] (my_robot_serial_driver) JobProgress: {'identifier': 'my_robot_serial_driver', 'progress': 'cmake'}
+[0.180951] (my_robot_serial_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/zhugeliang/ydlidar_ws/src/my_robot_serial_driver', '-DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver'], 'cwd': '/home/zhugeliang/ydlidar_ws/src/build/my_robot_serial_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zhugeliang'), ('SSH_CLIENT', '192.168.137.1 2297 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zhugeliang/ydlidar_ws/install/openslam_gmapping/lib:/home/zhugeliang/ydlidar_ws/install/motor_controller/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/zhugeliang'), ('OLDPWD', '/home/zhugeliang'), ('SSH_TTY', '/dev/pts/0'), ('LIDAR_TYPE', 'x3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'zhugeliang'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/zhugeliang/ydlidar_ws/src/build/my_robot_serial_driver'), ('SSH_CONNECTION', '192.168.137.1 2297 192.168.137.233 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/nav2_common/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller')]), 'shell': False}
+[0.200128] (-) TimerEvent: {}
+[0.210920] (virtual_obstacle_layer) JobProgress: {'identifier': 'virtual_obstacle_layer', 'progress': 'cmake'}
+[0.216907] (virtual_obstacle_layer) Command: {'cmd': ['/usr/bin/cmake', '/home/zhugeliang/ydlidar_ws/src/virtual_obstacle_layer', '-DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/virtual_obstacle_layer'], 'cwd': '/home/zhugeliang/ydlidar_ws/src/build/virtual_obstacle_layer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zhugeliang'), ('SSH_CLIENT', '192.168.137.1 2297 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zhugeliang/ydlidar_ws/install/openslam_gmapping/lib:/home/zhugeliang/ydlidar_ws/install/motor_controller/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/zhugeliang'), ('OLDPWD', '/home/zhugeliang'), ('SSH_TTY', '/dev/pts/0'), ('LIDAR_TYPE', 'x3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'zhugeliang'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/zhugeliang/ydlidar_ws/src/build/virtual_obstacle_layer'), ('SSH_CONNECTION', '192.168.137.1 2297 192.168.137.233 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/nav2_common/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller')]), 'shell': False}
+[0.300445] (-) TimerEvent: {}
+[0.404149] (-) TimerEvent: {}
+[0.505047] (-) TimerEvent: {}
+[0.606666] (-) TimerEvent: {}
+[0.708831] (-) TimerEvent: {}
+[0.810169] (-) TimerEvent: {}
+[0.876492] (my_robot_serial_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.889972] (motor_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.909205] (openslam_gmapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.910289] (-) TimerEvent: {}
+[0.967407] (virtual_obstacle_layer) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.010544] (-) TimerEvent: {}
+[1.112148] (-) TimerEvent: {}
+[1.213476] (-) TimerEvent: {}
+[1.315825] (-) TimerEvent: {}
+[1.417517] (-) TimerEvent: {}
+[1.502136] (openslam_gmapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.504553] (my_robot_serial_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.517778] (-) TimerEvent: {}
+[1.525078] (virtual_obstacle_layer) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.545510] (motor_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.551319] (my_robot_serial_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.552273] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.552875] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.568750] (motor_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.617981] (-) TimerEvent: {}
+[1.719881] (-) TimerEvent: {}
+[1.822794] (-) TimerEvent: {}
+[1.924781] (-) TimerEvent: {}
+[2.003703] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.013197] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.025331] (-) TimerEvent: {}
+[2.057852] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.064883] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.118441] (my_robot_serial_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.125862] (-) TimerEvent: {}
+[2.129805] (my_robot_serial_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.140460] (motor_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.144468] (motor_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.226060] (-) TimerEvent: {}
+[2.327752] (-) TimerEvent: {}
+[2.429686] (-) TimerEvent: {}
+[2.531829] (-) TimerEvent: {}
+[2.635334] (-) TimerEvent: {}
+[2.737730] (-) TimerEvent: {}
+[2.839875] (-) TimerEvent: {}
+[2.868798] (my_robot_serial_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.870171] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.873168] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.928474] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.931868] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.933352] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.936453] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.937333] (my_robot_serial_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.938177] (my_robot_serial_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.940150] (-) TimerEvent: {}
+[2.953121] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.954642] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.956391] (my_robot_serial_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.972820] (motor_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.029047] (motor_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.031954] (motor_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.040378] (-) TimerEvent: {}
+[3.051123] (motor_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[3.140774] (-) TimerEvent: {}
+[3.241931] (-) TimerEvent: {}
+[3.343088] (-) TimerEvent: {}
+[3.444071] (-) TimerEvent: {}
+[3.545237] (-) TimerEvent: {}
+[3.615268] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.619429] (my_robot_serial_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.625122] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.645460] (-) TimerEvent: {}
+[3.647117] (my_robot_serial_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.670627] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.693017] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.745742] (-) TimerEvent: {}
+[3.770060] (motor_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.776572] (motor_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.845952] (-) TimerEvent: {}
+[3.946994] (-) TimerEvent: {}
+[4.048435] (-) TimerEvent: {}
+[4.149514] (-) TimerEvent: {}
+[4.250676] (-) TimerEvent: {}
+[4.351968] (-) TimerEvent: {}
+[4.375050] (motor_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.384375] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.401449] (my_robot_serial_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.452282] (-) TimerEvent: {}
+[4.456371] (motor_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.459706] (motor_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.462889] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.467930] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.470574] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.492619] (my_robot_serial_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.495388] (my_robot_serial_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.512041] (motor_controller) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[4.512874] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[4.517364] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.519909] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.520830] (my_robot_serial_driver) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[4.550700] (openslam_gmapping) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[4.552453] (-) TimerEvent: {}
+[4.653916] (-) TimerEvent: {}
+[4.755834] (-) TimerEvent: {}
+[4.763674] (motor_controller) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[4.765270] (motor_controller) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.766357] (my_robot_serial_driver) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[4.767711] (my_robot_serial_driver) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.814972] (openslam_gmapping) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[4.816515] (openslam_gmapping) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.835163] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[4.836165] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.855986] (-) TimerEvent: {}
+[4.956921] (-) TimerEvent: {}
+[5.057803] (-) TimerEvent: {}
+[5.158850] (-) TimerEvent: {}
+[5.259863] (-) TimerEvent: {}
+[5.360808] (-) TimerEvent: {}
+[5.478316] (-) TimerEvent: {}
+[5.579135] (-) TimerEvent: {}
+[5.680084] (-) TimerEvent: {}
+[5.781023] (-) TimerEvent: {}
+[5.881891] (-) TimerEvent: {}
+[5.982751] (-) TimerEvent: {}
+[6.083792] (-) TimerEvent: {}
+[6.185628] (-) TimerEvent: {}
+[6.286886] (-) TimerEvent: {}
+[6.387674] (-) TimerEvent: {}
+[6.488469] (-) TimerEvent: {}
+[6.542710] (my_robot_serial_driver) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[6.543682] (motor_controller) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[6.588704] (-) TimerEvent: {}
+[6.635671] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Found nav2_costmap_2d: 0.4.7 (/opt/ros/foxy/share/nav2_costmap_2d/cmake)\n'}
+[6.688884] (-) TimerEvent: {}
+[6.789714] (-) TimerEvent: {}
+[6.891267] (-) TimerEvent: {}
+[6.942074] (openslam_gmapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.991470] (-) TimerEvent: {}
+[7.024729] (openslam_gmapping) StdoutLine: {'line': b'-- Generating done\n'}
+[7.045917] (openslam_gmapping) StdoutLine: {'line': b'-- Build files have been written to: /home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping\n'}
+[7.070909] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[7.072386] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'build'}
+[7.072503] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping', '--', '-j4', '-l4'], 'cwd': '/home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zhugeliang'), ('SSH_CLIENT', '192.168.137.1 2297 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zhugeliang/ydlidar_ws/install/openslam_gmapping/lib:/home/zhugeliang/ydlidar_ws/install/motor_controller/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/zhugeliang'), ('OLDPWD', '/home/zhugeliang'), ('SSH_TTY', '/dev/pts/0'), ('LIDAR_TYPE', 'x3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'zhugeliang'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping'), ('SSH_CONNECTION', '192.168.137.1 2297 192.168.137.233 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/zhugeliang/ydlidar_ws/install/nav2_common/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller')]), 'shell': False}
+[7.074477] (my_robot_serial_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.074987] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.075347] (motor_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.091704] (-) TimerEvent: {}
+[7.156614] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[7.157588] (motor_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[7.158141] (my_robot_serial_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[7.191885] (-) TimerEvent: {}
+[7.279588] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target utils\x1b[0m\n'}
+[7.292154] (-) TimerEvent: {}
+[7.355637] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_base\x1b[0m\n'}
+[7.392363] (-) TimerEvent: {}
+[7.449853] (openslam_gmapping) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object utils/CMakeFiles/utils.dir/movement.cpp.o\x1b[0m\n'}
+[7.462175] (openslam_gmapping) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object utils/CMakeFiles/utils.dir/stat.cpp.o\x1b[0m\n'}
+[7.492676] (-) TimerEvent: {}
+[7.570568] (openslam_gmapping) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o\x1b[0m\n'}
+[7.594517] (-) TimerEvent: {}
+[7.604201] (openslam_gmapping) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o\x1b[0m\n'}
+[7.694739] (-) TimerEvent: {}
+[7.795738] (-) TimerEvent: {}
+[7.898347] (-) TimerEvent: {}
+[8.001561] (-) TimerEvent: {}
+[8.103288] (-) TimerEvent: {}
+[8.205017] (-) TimerEvent: {}
+[8.306013] (-) TimerEvent: {}
+[8.407039] (-) TimerEvent: {}
+[8.508127] (-) TimerEvent: {}
+[8.609279] (-) TimerEvent: {}
+[8.710316] (-) TimerEvent: {}
+[8.811497] (-) TimerEvent: {}
+[8.812755] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[8.817105] (my_robot_serial_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[8.828175] (motor_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[8.911773] (-) TimerEvent: {}
+[9.012848] (-) TimerEvent: {}
+[9.114398] (-) TimerEvent: {}
+[9.149305] (motor_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[9.214609] (-) TimerEvent: {}
+[9.257877] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[9.312162] (my_robot_serial_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[9.314899] (-) TimerEvent: {}
+[9.416236] (-) TimerEvent: {}
+[9.517554] (-) TimerEvent: {}
+[9.618535] (-) TimerEvent: {}
+[9.719429] (-) TimerEvent: {}
+[9.820266] (-) TimerEvent: {}
+[9.921097] (-) TimerEvent: {}
+[9.975067] (openslam_gmapping) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX static library libsensor_base.a\x1b[0m\n'}
+[10.021332] (-) TimerEvent: {}
+[10.122412] (-) TimerEvent: {}
+[10.223621] (-) TimerEvent: {}
+[10.245024] (my_robot_serial_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.246708] (motor_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.248045] (virtual_obstacle_layer) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.313721] (openslam_gmapping) StdoutLine: {'line': b'[ 22%] Built target sensor_base\n'}
+[10.323775] (-) TimerEvent: {}
+[10.417814] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_odometry\x1b[0m\n'}
+[10.423898] (-) TimerEvent: {}
+[10.432586] (openslam_gmapping) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_range\x1b[0m\n'}
+[10.524146] (-) TimerEvent: {}
+[10.576174] (openslam_gmapping) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o\x1b[0m\n'}
+[10.585781] (openslam_gmapping) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometrysensor.cpp.o\x1b[0m\n'}
+[10.603454] (openslam_gmapping) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o\x1b[0m\n'}
+[10.614253] (openslam_gmapping) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX static library libutils.a\x1b[0m\n'}
+[10.624393] (-) TimerEvent: {}
+[10.725730] (-) TimerEvent: {}
+[10.827252] (-) TimerEvent: {}
+[10.928477] (-) TimerEvent: {}
+[10.989151] (my_robot_serial_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[10.990849] (motor_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[11.020086] (my_robot_serial_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[11.023385] (motor_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[11.028685] (-) TimerEvent: {}
+[11.040445] (motor_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[11.042146] (my_robot_serial_driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[11.063497] (openslam_gmapping) StdoutLine: {'line': b'[ 40%] Built target utils\n'}
+[11.128950] (-) TimerEvent: {}
+[11.154109] (openslam_gmapping) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o\x1b[0m\n'}
+[11.229208] (-) TimerEvent: {}
+[11.330364] (-) TimerEvent: {}
+[11.431554] (-) TimerEvent: {}
+[11.532809] (-) TimerEvent: {}
+[11.633843] (-) TimerEvent: {}
+[11.734865] (-) TimerEvent: {}
+[11.835907] (-) TimerEvent: {}
+[11.937046] (-) TimerEvent: {}
+[12.038056] (-) TimerEvent: {}
+[12.138308] (motor_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[12.139716] (-) TimerEvent: {}
+[12.143192] (motor_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[12.167956] (my_robot_serial_driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[12.172437] (my_robot_serial_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[12.239947] (-) TimerEvent: {}
+[12.341148] (-) TimerEvent: {}
+[12.442299] (-) TimerEvent: {}
+[12.543379] (-) TimerEvent: {}
+[12.644426] (-) TimerEvent: {}
+[12.745505] (-) TimerEvent: {}
+[12.846610] (-) TimerEvent: {}
+[12.949866] (-) TimerEvent: {}
+[13.051034] (-) TimerEvent: {}
+[13.152182] (-) TimerEvent: {}
+[13.253359] (-) TimerEvent: {}
+[13.318524] (motor_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[13.328203] (motor_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[13.353710] (-) TimerEvent: {}
+[13.397693] (my_robot_serial_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[13.399002] (my_robot_serial_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[13.453958] (-) TimerEvent: {}
+[13.555520] (-) TimerEvent: {}
+[13.656870] (-) TimerEvent: {}
+[13.758473] (-) TimerEvent: {}
+[13.860132] (-) TimerEvent: {}
+[13.961687] (-) TimerEvent: {}
+[14.063098] (-) TimerEvent: {}
+[14.164721] (-) TimerEvent: {}
+[14.253294] (motor_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[14.254291] (motor_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[14.265048] (-) TimerEvent: {}
+[14.308321] (openslam_gmapping) StderrLine: {'line': b'make[2]: *** [sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/build.make:63: sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o] Interrupt\n'}
+[14.309788] (openslam_gmapping) StderrLine: {'line': b'make[2]: *** [sensor/sensor_range/CMakeFiles/sensor_range.dir/build.make:76: sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o] Interrupt\n'}
+[14.311503] (openslam_gmapping) StderrLine: {'line': b'make[2]: *** [sensor/sensor_range/CMakeFiles/sensor_range.dir/build.make:63: sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o] Interrupt\n'}
+[14.312426] (openslam_gmapping) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:359: sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/all] Interrupt\n'}
+[14.313553] (openslam_gmapping) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:386: sensor/sensor_range/CMakeFiles/sensor_range.dir/all] Interrupt\n'}
+[14.314911] (openslam_gmapping) StderrLine: {'line': b'make: *** [Makefile:141: all] Interrupt\n'}
+[14.332057] (my_robot_serial_driver) CommandEnded: {'returncode': -2}
+[14.365991] (-) TimerEvent: {}
+[14.384477] (my_robot_serial_driver) JobEnded: {'identifier': 'my_robot_serial_driver', 'rc': 'SIGINT'}
+[14.391896] (openslam_gmapping) JobEnded: {'identifier': 'openslam_gmapping', 'rc': 'SIGINT'}
+[14.396148] (virtual_obstacle_layer) JobEnded: {'identifier': 'virtual_obstacle_layer', 'rc': 'SIGINT'}
+[14.398733] (motor_controller) JobEnded: {'identifier': 'motor_controller', 'rc': 'SIGINT'}
+[14.406863] (yahboomcar_description) JobSkipped: {'identifier': 'yahboomcar_description'}
+[14.407214] (yahboomcar_nav) JobSkipped: {'identifier': 'yahboomcar_nav'}
+[14.408162] (ydlidar_ros2_driver) JobSkipped: {'identifier': 'ydlidar_ros2_driver'}
+[14.408366] (slam_gmapping) JobSkipped: {'identifier': 'slam_gmapping'}
+[14.408474] (-) EventReactorShutdown: {}

@@ -105,6 +105,6 @@ def generate_launch_description():
         
         rviz_arg,
         rviz_node,
-        send_goal_node,
+        #send_goal_node,
         
     ])

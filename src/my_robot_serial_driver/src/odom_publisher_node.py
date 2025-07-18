@@ -18,7 +18,7 @@ class OdomPublisher(Node):
         # === 声明参数（带默认值） ===
         self.declare_parameter('port', '/dev/ttyACM0')
         self.declare_parameter('baudrate', 9600)
-        self.declare_parameter('wheel_separation', 0.182)
+        self.declare_parameter('wheel_separation', 0.187)
         self.declare_parameter('wheel_radius', 0.0325)
         self.declare_parameter('ticks_per_rev', 1728)
         self.declare_parameter('update_rate', 20.0)  # Hz

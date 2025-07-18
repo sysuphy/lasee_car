@@ -1,0 +1,318 @@
+[0.829s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.830s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffac100790>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffac100790>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffabfd39a0>)
+[1.486s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.486s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.488s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/zhugeliang/ydlidar_ws/src'
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_serial_driver) by extensions ['ignore', 'ignore_ament_install']
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_serial_driver) by extension 'ignore'
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_serial_driver) by extension 'ignore_ament_install'
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_serial_driver) by extensions ['colcon_pkg']
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_serial_driver) by extension 'colcon_pkg'
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_serial_driver) by extensions ['colcon_meta']
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_serial_driver) by extension 'colcon_meta'
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_serial_driver) by extensions ['ros']
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_serial_driver) by extension 'ros'
+[1.549s] DEBUG:colcon.colcon_core.package_identification:Package 'my_robot_serial_driver' with type 'ros.ament_cmake' and name 'my_robot_serial_driver'
+[1.549s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[1.550s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extension 'ignore'
+[1.550s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extension 'ignore_ament_install'
+[1.550s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extensions ['colcon_pkg']
+[1.550s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extension 'colcon_pkg'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extensions ['colcon_meta']
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extension 'colcon_meta'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extensions ['ros']
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(openslam_gmapping) by extension 'ros'
+[1.559s] DEBUG:colcon.colcon_core.package_identification:Package 'openslam_gmapping' with type 'ros.ament_cmake' and name 'openslam_gmapping'
+[1.560s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extensions ['ignore', 'ignore_ament_install']
+[1.560s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extension 'ignore'
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extension 'ignore_ament_install'
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extensions ['colcon_pkg']
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extension 'colcon_pkg'
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extensions ['colcon_meta']
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extension 'colcon_meta'
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extensions ['ros']
+[1.562s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extension 'ros'
+[1.562s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extensions ['cmake', 'python']
+[1.562s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extension 'cmake'
+[1.562s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extension 'python'
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extensions ['python_setup_py']
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface) by extension 'python_setup_py'
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extensions ['ignore', 'ignore_ament_install']
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extension 'ignore'
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extension 'ignore_ament_install'
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extensions ['colcon_pkg']
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extension 'colcon_pkg'
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extensions ['colcon_meta']
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extension 'colcon_meta'
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extensions ['ros']
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extension 'ros'
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extensions ['cmake', 'python']
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extension 'cmake'
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extension 'python'
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extensions ['python_setup_py']
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino) by extension 'python_setup_py'
+[1.566s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extensions ['ignore', 'ignore_ament_install']
+[1.566s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extension 'ignore'
+[1.567s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extension 'ignore_ament_install'
+[1.567s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extensions ['colcon_pkg']
+[1.567s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extension 'colcon_pkg'
+[1.567s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extensions ['colcon_meta']
+[1.567s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extension 'colcon_meta'
+[1.567s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extensions ['ros']
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extension 'ros'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extensions ['cmake', 'python']
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extension 'cmake'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extension 'python'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extensions ['python_setup_py']
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/Arduino/Arduino) by extension 'python_setup_py'
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extension 'ignore'
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extension 'ignore_ament_install'
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extensions ['colcon_pkg']
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extension 'colcon_pkg'
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extensions ['colcon_meta']
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extension 'colcon_meta'
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extensions ['ros']
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extension 'ros'
+[1.571s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extensions ['cmake', 'python']
+[1.571s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extension 'cmake'
+[1.571s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extension 'python'
+[1.571s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extensions ['python_setup_py']
+[1.571s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller) by extension 'python_setup_py'
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller/motor_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller/motor_controller) by extension 'ignore'
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller/motor_controller) by extension 'ignore_ament_install'
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller/motor_controller) by extensions ['colcon_pkg']
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller/motor_controller) by extension 'colcon_pkg'
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller/motor_controller) by extensions ['colcon_meta']
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller/motor_controller) by extension 'colcon_meta'
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller/motor_controller) by extensions ['ros']
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_control_custom_hardware_interface/motor_controller/motor_controller) by extension 'ros'
+[1.577s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_control_custom_hardware_interface/motor_controller/motor_controller' with type 'ros.ament_cmake' and name 'motor_controller'
+[1.577s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[1.578s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extension 'ignore'
+[1.578s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extension 'ignore_ament_install'
+[1.578s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extensions ['colcon_pkg']
+[1.578s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extension 'colcon_pkg'
+[1.578s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extensions ['colcon_meta']
+[1.579s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extension 'colcon_meta'
+[1.579s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extensions ['ros']
+[1.579s] Level 1:colcon.colcon_core.package_identification:_identify(slam_gmapping) by extension 'ros'
+[1.584s] DEBUG:colcon.colcon_core.package_identification:Package 'slam_gmapping' with type 'ros.ament_cmake' and name 'slam_gmapping'
+[1.585s] Level 1:colcon.colcon_core.package_identification:_identify(virtual_obstacle_layer) by extensions ['ignore', 'ignore_ament_install']
+[1.585s] Level 1:colcon.colcon_core.package_identification:_identify(virtual_obstacle_layer) by extension 'ignore'
+[1.585s] Level 1:colcon.colcon_core.package_identification:_identify(virtual_obstacle_layer) by extension 'ignore_ament_install'
+[1.586s] Level 1:colcon.colcon_core.package_identification:_identify(virtual_obstacle_layer) by extensions ['colcon_pkg']
+[1.586s] Level 1:colcon.colcon_core.package_identification:_identify(virtual_obstacle_layer) by extension 'colcon_pkg'
+[1.586s] Level 1:colcon.colcon_core.package_identification:_identify(virtual_obstacle_layer) by extensions ['colcon_meta']
+[1.586s] Level 1:colcon.colcon_core.package_identification:_identify(virtual_obstacle_layer) by extension 'colcon_meta'
+[1.586s] Level 1:colcon.colcon_core.package_identification:_identify(virtual_obstacle_layer) by extensions ['ros']
+[1.586s] Level 1:colcon.colcon_core.package_identification:_identify(virtual_obstacle_layer) by extension 'ros'
+[1.589s] DEBUG:colcon.colcon_core.package_identification:Package 'virtual_obstacle_layer' with type 'ros.ament_cmake' and name 'virtual_obstacle_layer'
+[1.590s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_description) by extensions ['ignore', 'ignore_ament_install']
+[1.590s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_description) by extension 'ignore'
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_description) by extension 'ignore_ament_install'
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_description) by extensions ['colcon_pkg']
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_description) by extension 'colcon_pkg'
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_description) by extensions ['colcon_meta']
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_description) by extension 'colcon_meta'
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_description) by extensions ['ros']
+[1.592s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_description) by extension 'ros'
+[1.594s] DEBUG:colcon.colcon_core.package_identification:Package 'yahboomcar_description' with type 'ros.ament_python' and name 'yahboomcar_description'
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_nav) by extensions ['ignore', 'ignore_ament_install']
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_nav) by extension 'ignore'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_nav) by extension 'ignore_ament_install'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_nav) by extensions ['colcon_pkg']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_nav) by extension 'colcon_pkg'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_nav) by extensions ['colcon_meta']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_nav) by extension 'colcon_meta'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_nav) by extensions ['ros']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(yahboomcar_nav) by extension 'ros'
+[1.600s] DEBUG:colcon.colcon_core.package_identification:Package 'yahboomcar_nav' with type 'ros.ament_python' and name 'yahboomcar_nav'
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extensions ['ignore', 'ignore_ament_install']
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extension 'ignore'
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extension 'ignore_ament_install'
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extensions ['colcon_pkg']
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extension 'colcon_pkg'
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extensions ['colcon_meta']
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extension 'colcon_meta'
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extensions ['ros']
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver-master) by extension 'ros'
+[1.605s] DEBUG:colcon.colcon_core.package_identification:Package 'ydlidar_ros2_driver-master' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[1.606s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.606s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.606s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.606s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.606s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.689s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.690s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.706s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/zhugeliang/ydlidar_ws/install
+[1.715s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 243 installed packages in /opt/ros/foxy
+[1.722s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.055s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_args' from command line to 'None'
+[2.055s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_target' from command line to 'None'
+[2.055s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.055s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[2.055s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_clean_first' from command line to 'False'
+[2.055s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_force_configure' from command line to 'False'
+[2.055s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'ament_cmake_args' from command line to 'None'
+[2.055s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[2.056s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.056s] DEBUG:colcon.colcon_core.verb:Building package 'motor_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zhugeliang/ydlidar_ws/src/build/motor_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zhugeliang/ydlidar_ws/src/install/motor_controller', 'merge_install': False, 'path': '/home/zhugeliang/ydlidar_ws/src/ros2_control_custom_hardware_interface/motor_controller/motor_controller', 'symlink_install': False, 'test_result_base': None}
+[2.057s] Level 5:colcon.colcon_core.verb:set package 'my_robot_serial_driver' build argument 'cmake_args' from command line to 'None'
+[2.057s] Level 5:colcon.colcon_core.verb:set package 'my_robot_serial_driver' build argument 'cmake_target' from command line to 'None'
+[2.057s] Level 5:colcon.colcon_core.verb:set package 'my_robot_serial_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.058s] Level 5:colcon.colcon_core.verb:set package 'my_robot_serial_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[2.058s] Level 5:colcon.colcon_core.verb:set package 'my_robot_serial_driver' build argument 'cmake_clean_first' from command line to 'False'
+[2.058s] Level 5:colcon.colcon_core.verb:set package 'my_robot_serial_driver' build argument 'cmake_force_configure' from command line to 'False'
+[2.058s] Level 5:colcon.colcon_core.verb:set package 'my_robot_serial_driver' build argument 'ament_cmake_args' from command line to 'None'
+[2.058s] Level 5:colcon.colcon_core.verb:set package 'my_robot_serial_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[2.058s] Level 5:colcon.colcon_core.verb:set package 'my_robot_serial_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.058s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_serial_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zhugeliang/ydlidar_ws/src/build/my_robot_serial_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver', 'merge_install': False, 'path': '/home/zhugeliang/ydlidar_ws/src/my_robot_serial_driver', 'symlink_install': False, 'test_result_base': None}
+[2.060s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_args' from command line to 'None'
+[2.060s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_target' from command line to 'None'
+[2.060s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.060s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_clean_cache' from command line to 'False'
+[2.060s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_clean_first' from command line to 'False'
+[2.060s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_force_configure' from command line to 'False'
+[2.060s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'ament_cmake_args' from command line to 'None'
+[2.060s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'catkin_cmake_args' from command line to 'None'
+[2.060s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.061s] DEBUG:colcon.colcon_core.verb:Building package 'openslam_gmapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zhugeliang/ydlidar_ws/src/install/openslam_gmapping', 'merge_install': False, 'path': '/home/zhugeliang/ydlidar_ws/src/openslam_gmapping', 'symlink_install': False, 'test_result_base': None}
+[2.062s] Level 5:colcon.colcon_core.verb:set package 'virtual_obstacle_layer' build argument 'cmake_args' from command line to 'None'
+[2.062s] Level 5:colcon.colcon_core.verb:set package 'virtual_obstacle_layer' build argument 'cmake_target' from command line to 'None'
+[2.062s] Level 5:colcon.colcon_core.verb:set package 'virtual_obstacle_layer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.062s] Level 5:colcon.colcon_core.verb:set package 'virtual_obstacle_layer' build argument 'cmake_clean_cache' from command line to 'False'
+[2.062s] Level 5:colcon.colcon_core.verb:set package 'virtual_obstacle_layer' build argument 'cmake_clean_first' from command line to 'False'
+[2.062s] Level 5:colcon.colcon_core.verb:set package 'virtual_obstacle_layer' build argument 'cmake_force_configure' from command line to 'False'
+[2.063s] Level 5:colcon.colcon_core.verb:set package 'virtual_obstacle_layer' build argument 'ament_cmake_args' from command line to 'None'
+[2.063s] Level 5:colcon.colcon_core.verb:set package 'virtual_obstacle_layer' build argument 'catkin_cmake_args' from command line to 'None'
+[2.063s] Level 5:colcon.colcon_core.verb:set package 'virtual_obstacle_layer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.063s] DEBUG:colcon.colcon_core.verb:Building package 'virtual_obstacle_layer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zhugeliang/ydlidar_ws/src/build/virtual_obstacle_layer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zhugeliang/ydlidar_ws/src/install/virtual_obstacle_layer', 'merge_install': False, 'path': '/home/zhugeliang/ydlidar_ws/src/virtual_obstacle_layer', 'symlink_install': False, 'test_result_base': None}
+[2.064s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_description' build argument 'cmake_args' from command line to 'None'
+[2.064s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_description' build argument 'cmake_target' from command line to 'None'
+[2.064s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.065s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.065s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_description' build argument 'cmake_clean_first' from command line to 'False'
+[2.065s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_description' build argument 'cmake_force_configure' from command line to 'False'
+[2.065s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_description' build argument 'ament_cmake_args' from command line to 'None'
+[2.065s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.065s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.065s] DEBUG:colcon.colcon_core.verb:Building package 'yahboomcar_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zhugeliang/ydlidar_ws/src/build/yahboomcar_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zhugeliang/ydlidar_ws/src/install/yahboomcar_description', 'merge_install': False, 'path': '/home/zhugeliang/ydlidar_ws/src/yahboomcar_description', 'symlink_install': False, 'test_result_base': None}
+[2.067s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_nav' build argument 'cmake_args' from command line to 'None'
+[2.067s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_nav' build argument 'cmake_target' from command line to 'None'
+[2.067s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_nav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.067s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_nav' build argument 'cmake_clean_cache' from command line to 'False'
+[2.067s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_nav' build argument 'cmake_clean_first' from command line to 'False'
+[2.067s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_nav' build argument 'cmake_force_configure' from command line to 'False'
+[2.067s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_nav' build argument 'ament_cmake_args' from command line to 'None'
+[2.067s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_nav' build argument 'catkin_cmake_args' from command line to 'None'
+[2.067s] Level 5:colcon.colcon_core.verb:set package 'yahboomcar_nav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.068s] DEBUG:colcon.colcon_core.verb:Building package 'yahboomcar_nav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zhugeliang/ydlidar_ws/src/build/yahboomcar_nav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zhugeliang/ydlidar_ws/src/install/yahboomcar_nav', 'merge_install': False, 'path': '/home/zhugeliang/ydlidar_ws/src/yahboomcar_nav', 'symlink_install': False, 'test_result_base': None}
+[2.069s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[2.069s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[2.069s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.069s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[2.069s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[2.069s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[2.069s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[2.070s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[2.070s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.070s] DEBUG:colcon.colcon_core.verb:Building package 'ydlidar_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zhugeliang/ydlidar_ws/src/build/ydlidar_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zhugeliang/ydlidar_ws/src/install/ydlidar_ros2_driver', 'merge_install': False, 'path': '/home/zhugeliang/ydlidar_ws/src/ydlidar_ros2_driver-master', 'symlink_install': False, 'test_result_base': None}
+[2.071s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_args' from command line to 'None'
+[2.071s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_target' from command line to 'None'
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_clean_cache' from command line to 'False'
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_clean_first' from command line to 'False'
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_force_configure' from command line to 'False'
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'ament_cmake_args' from command line to 'None'
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'catkin_cmake_args' from command line to 'None'
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.072s] DEBUG:colcon.colcon_core.verb:Building package 'slam_gmapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zhugeliang/ydlidar_ws/src/build/slam_gmapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zhugeliang/ydlidar_ws/src/install/slam_gmapping', 'merge_install': False, 'path': '/home/zhugeliang/ydlidar_ws/src/slam_gmapping', 'symlink_install': False, 'test_result_base': None}
+[2.073s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.076s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.077s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zhugeliang/ydlidar_ws/src/openslam_gmapping' with build type 'ament_cmake'
+[2.078s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zhugeliang/ydlidar_ws/src/openslam_gmapping'
+[2.092s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.093s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.093s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.119s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zhugeliang/ydlidar_ws/src/ros2_control_custom_hardware_interface/motor_controller/motor_controller' with build type 'ament_cmake'
+[2.120s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zhugeliang/ydlidar_ws/src/ros2_control_custom_hardware_interface/motor_controller/motor_controller'
+[2.122s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.122s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.148s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zhugeliang/ydlidar_ws/src/my_robot_serial_driver' with build type 'ament_cmake'
+[2.149s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zhugeliang/ydlidar_ws/src/my_robot_serial_driver'
+[2.150s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.151s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.176s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zhugeliang/ydlidar_ws/src/virtual_obstacle_layer' with build type 'ament_cmake'
+[2.177s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zhugeliang/ydlidar_ws/src/virtual_obstacle_layer'
+[2.179s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.179s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.220s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping': CMAKE_PREFIX_PATH=/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller /usr/bin/cmake /home/zhugeliang/ydlidar_ws/src/openslam_gmapping -DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/openslam_gmapping
+[2.249s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zhugeliang/ydlidar_ws/src/build/motor_controller': CMAKE_PREFIX_PATH=/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller /usr/bin/cmake /home/zhugeliang/ydlidar_ws/src/ros2_control_custom_hardware_interface/motor_controller/motor_controller -DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/motor_controller
+[2.268s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zhugeliang/ydlidar_ws/src/build/my_robot_serial_driver': CMAKE_PREFIX_PATH=/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller /usr/bin/cmake /home/zhugeliang/ydlidar_ws/src/my_robot_serial_driver -DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver
+[2.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zhugeliang/ydlidar_ws/src/build/virtual_obstacle_layer': CMAKE_PREFIX_PATH=/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller /usr/bin/cmake /home/zhugeliang/ydlidar_ws/src/virtual_obstacle_layer -DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/virtual_obstacle_layer
+[9.147s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller /usr/bin/cmake /home/zhugeliang/ydlidar_ws/src/openslam_gmapping -DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/openslam_gmapping
+[9.149s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping': CMAKE_PREFIX_PATH=/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller /usr/bin/cmake --build /home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping -- -j4 -l4
+[16.382s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete was interrupted
+[16.383s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete again
+[16.404s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_serial_driver)
+[16.409s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zhugeliang/ydlidar_ws/src/build/my_robot_serial_driver' returned '-2': CMAKE_PREFIX_PATH=/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller /usr/bin/cmake /home/zhugeliang/ydlidar_ws/src/my_robot_serial_driver -DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver
+[16.430s] Level 1:colcon.colcon_core.environment:checking '/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver' for CMake module files
+[16.432s] Level 1:colcon.colcon_core.environment:checking '/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver' for CMake config files
+[16.434s] Level 1:colcon.colcon_core.environment:checking '/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver/bin'
+[16.434s] Level 1:colcon.colcon_core.environment:checking '/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver/lib/pkgconfig/my_robot_serial_driver.pc'
+[16.435s] Level 1:colcon.colcon_core.environment:checking '/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver/lib/python3.8/site-packages'
+[16.436s] Level 1:colcon.colcon_core.environment:checking '/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver/bin'
+[16.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver/share/my_robot_serial_driver/package.ps1'
+[16.443s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver/share/my_robot_serial_driver/package.dsv'
+[16.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver/share/my_robot_serial_driver/package.sh'
+[16.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver/share/my_robot_serial_driver/package.bash'
+[16.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver/share/my_robot_serial_driver/package.zsh'
+[16.458s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zhugeliang/ydlidar_ws/src/install/my_robot_serial_driver/share/colcon-core/packages/my_robot_serial_driver)
+[16.480s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished
+[16.480s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.481s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.482s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.517s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.518s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.518s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.522s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[16.523s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.524s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zhugeliang/ydlidar_ws/src/install/local_setup.ps1'
+[16.529s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zhugeliang/ydlidar_ws/src/install/_local_setup_util_ps1.py'
+[16.536s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zhugeliang/ydlidar_ws/src/install/setup.ps1'
+[16.545s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zhugeliang/ydlidar_ws/src/install/local_setup.sh'
+[16.550s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zhugeliang/ydlidar_ws/src/install/_local_setup_util_sh.py'
+[16.553s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zhugeliang/ydlidar_ws/src/install/setup.sh'
+[16.564s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zhugeliang/ydlidar_ws/src/install/local_setup.bash'
+[16.569s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zhugeliang/ydlidar_ws/src/install/setup.bash'
+[16.577s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zhugeliang/ydlidar_ws/src/install/local_setup.zsh'
+[16.581s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zhugeliang/ydlidar_ws/src/install/setup.zsh'

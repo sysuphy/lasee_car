@@ -1,0 +1,33 @@
+[0.129s] Invoking command in '/home/zhugeliang/ydlidar_ws/src/build/motor_controller': CMAKE_PREFIX_PATH=/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller /usr/bin/cmake /home/zhugeliang/ydlidar_ws/src/ros2_control_custom_hardware_interface/motor_controller/motor_controller -DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/motor_controller
+[0.846s] -- The C compiler identification is GNU 9.4.0
+[1.501s] -- The CXX compiler identification is GNU 9.4.0
+[1.524s] -- Check for working C compiler: /usr/bin/cc
+[2.096s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.100s] -- Detecting C compiler ABI info
+[2.928s] -- Detecting C compiler ABI info - done
+[2.985s] -- Detecting C compile features
+[2.988s] -- Detecting C compile features - done
+[3.007s] -- Check for working CXX compiler: /usr/bin/c++
+[3.726s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.733s] -- Detecting CXX compiler ABI info
+[4.331s] -- Detecting CXX compiler ABI info - done
+[4.412s] -- Detecting CXX compile features
+[4.415s] -- Detecting CXX compile features - done
+[4.468s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.719s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.721s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.499s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[7.031s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.113s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[8.784s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[9.105s] -- Found FastRTPS: /opt/ros/foxy/include  
+[10.202s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.947s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[10.979s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.996s] -- Looking for pthread.h
+[12.094s] -- Looking for pthread.h - found
+[12.099s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[13.274s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[13.284s] -- Looking for pthread_create in pthreads
+[14.209s] -- Looking for pthread_create in pthreads - not found
+[14.210s] -- Looking for pthread_create in pthread

@@ -33,5 +33,5 @@ def generate_launch_description():
     return LaunchDescription([
         serial_driver_launch,
         lidar_launch,
-        tf_base_link_to_laser
+        #tf_base_link_to_laser
     ])

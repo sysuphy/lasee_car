@@ -1,0 +1,42 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping
+[35m[1mScanning dependencies of target utils[0m
+[35m[1mScanning dependencies of target sensor_base[0m
+[  4%] [32mBuilding CXX object utils/CMakeFiles/utils.dir/movement.cpp.o[0m
+[  9%] [32mBuilding CXX object utils/CMakeFiles/utils.dir/stat.cpp.o[0m
+[ 13%] [32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o[0m
+[ 18%] [32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o[0m
+[ 22%] [32m[1mLinking CXX static library libsensor_base.a[0m
+[ 22%] Built target sensor_base
+[35m[1mScanning dependencies of target sensor_odometry[0m
+[35m[1mScanning dependencies of target sensor_range[0m
+[ 27%] [32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o[0m
+[ 31%] [32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometrysensor.cpp.o[0m
+[ 36%] [32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o[0m
+[ 40%] [32m[1mLinking CXX static library libutils.a[0m
+[ 40%] Built target utils
+[ 45%] [32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o[0m
+make[2]: *** [sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/build.make:63: sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o] Interrupt
+make[2]: *** [sensor/sensor_range/CMakeFiles/sensor_range.dir/build.make:76: sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o] Interrupt
+make[2]: *** [sensor/sensor_range/CMakeFiles/sensor_range.dir/build.make:63: sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:359: sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/all] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:386: sensor/sensor_range/CMakeFiles/sensor_range.dir/all] Interrupt
+make: *** [Makefile:141: all] Interrupt

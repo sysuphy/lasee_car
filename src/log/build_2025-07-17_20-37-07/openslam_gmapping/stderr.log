@@ -1,0 +1,6 @@
+make[2]: *** [sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/build.make:63: sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o] Interrupt
+make[2]: *** [sensor/sensor_range/CMakeFiles/sensor_range.dir/build.make:76: sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o] Interrupt
+make[2]: *** [sensor/sensor_range/CMakeFiles/sensor_range.dir/build.make:63: sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:359: sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/all] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:386: sensor/sensor_range/CMakeFiles/sensor_range.dir/all] Interrupt
+make: *** [Makefile:141: all] Interrupt

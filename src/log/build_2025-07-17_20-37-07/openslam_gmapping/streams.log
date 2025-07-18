@@ -1,0 +1,45 @@
+[0.141s] Invoking command in '/home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping': CMAKE_PREFIX_PATH=/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller /usr/bin/cmake /home/zhugeliang/ydlidar_ws/src/openslam_gmapping -DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/openslam_gmapping
+[0.906s] -- The C compiler identification is GNU 9.4.0
+[1.499s] -- The CXX compiler identification is GNU 9.4.0
+[1.549s] -- Check for working C compiler: /usr/bin/cc
+[2.055s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.062s] -- Detecting C compiler ABI info
+[2.867s] -- Detecting C compiler ABI info - done
+[2.929s] -- Detecting C compile features
+[2.933s] -- Detecting C compile features - done
+[2.952s] -- Check for working CXX compiler: /usr/bin/c++
+[3.668s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.690s] -- Detecting CXX compiler ABI info
+[4.460s] -- Detecting CXX compiler ABI info - done
+[4.514s] -- Detecting CXX compile features
+[4.517s] -- Detecting CXX compile features - done
+[4.547s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.812s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.814s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.939s] -- Configuring done
+[7.021s] -- Generating done
+[7.043s] -- Build files have been written to: /home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping
+[7.068s] Invoked command in '/home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller /usr/bin/cmake /home/zhugeliang/ydlidar_ws/src/openslam_gmapping -DCMAKE_INSTALL_PREFIX=/home/zhugeliang/ydlidar_ws/src/install/openslam_gmapping
+[7.070s] Invoking command in '/home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping': CMAKE_PREFIX_PATH=/home/zhugeliang/ydlidar_ws/install/ydlidar_ros2_driver:/home/zhugeliang/ydlidar_ws/install/slam_gmapping:/home/zhugeliang/ydlidar_ws/install/openslam_gmapping:/home/zhugeliang/ydlidar_ws/install/nav2_common:/home/zhugeliang/ydlidar_ws/install/yahboomcar_nav:/home/zhugeliang/ydlidar_ws/install/yahboomcar_description:/home/zhugeliang/ydlidar_ws/install/nav2_gazebo_spawner:/opt/ros/foxy:/home/zhugeliang/ydlidar_ws/install/my_robot_serial_driver:/home/zhugeliang/ydlidar_ws/install/motor_controller /usr/bin/cmake --build /home/zhugeliang/ydlidar_ws/src/build/openslam_gmapping -- -j4 -l4
+[7.276s] [35m[1mScanning dependencies of target utils[0m
+[7.352s] [35m[1mScanning dependencies of target sensor_base[0m
+[7.447s] [  4%] [32mBuilding CXX object utils/CMakeFiles/utils.dir/movement.cpp.o[0m
+[7.459s] [  9%] [32mBuilding CXX object utils/CMakeFiles/utils.dir/stat.cpp.o[0m
+[7.568s] [ 13%] [32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o[0m
+[7.601s] [ 18%] [32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o[0m
+[9.972s] [ 22%] [32m[1mLinking CXX static library libsensor_base.a[0m
+[10.310s] [ 22%] Built target sensor_base
+[10.415s] [35m[1mScanning dependencies of target sensor_odometry[0m
+[10.430s] [35m[1mScanning dependencies of target sensor_range[0m
+[10.573s] [ 27%] [32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o[0m
+[10.583s] [ 31%] [32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometrysensor.cpp.o[0m
+[10.601s] [ 36%] [32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o[0m
+[10.611s] [ 40%] [32m[1mLinking CXX static library libutils.a[0m
+[11.060s] [ 40%] Built target utils
+[11.151s] [ 45%] [32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o[0m
+[14.305s] make[2]: *** [sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/build.make:63: sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o] Interrupt
+[14.307s] make[2]: *** [sensor/sensor_range/CMakeFiles/sensor_range.dir/build.make:76: sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o] Interrupt
+[14.308s] make[2]: *** [sensor/sensor_range/CMakeFiles/sensor_range.dir/build.make:63: sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o] Interrupt
+[14.309s] make[1]: *** [CMakeFiles/Makefile2:359: sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/all] Interrupt
+[14.311s] make[1]: *** [CMakeFiles/Makefile2:386: sensor/sensor_range/CMakeFiles/sensor_range.dir/all] Interrupt
+[14.312s] make: *** [Makefile:141: all] Interrupt
