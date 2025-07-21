@@ -15,6 +15,9 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+# 确保指定了 include 目录
+include_directories(include)
+
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(nav2_costmap_2d REQUIRED)
@@ -23,6 +26,11 @@ find_package(pluginlib REQUIRED)
 find_package(nav2_voxel_grid REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
+
+# 添加缺失的依赖项
+find_package(nav2_util REQUIRED)
+find_package(nav2_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 # 源码和头文件
 add_library(${PROJECT_NAME} SHARED
@@ -44,7 +52,9 @@ ament_target_dependencies(${PROJECT_NAME}
 )
 
 # ➕ 插件导出（这里加上这句）
-pluginlib_export_plugin_description_file(nav2_costmap_2d plugins.xml)
+pluginlib_export_plugin_description_file(nav2_costmap_2d plugin/plugins.xml)
+
+add_executable(test_virtual_obstacle_layer src/test_virtual_obstacle_layer.cpp)
 
 # 安装
 install(TARGETS ${PROJECT_NAME}
@@ -57,10 +67,24 @@ install(DIRECTORY include/
   DESTINATION include
 )
 
-install(FILES plugins.xml
+install(FILES plugin/plugins.xml
   DESTINATION share/${PROJECT_NAME}
 )
 
+install(TARGETS test_virtual_obstacle_layer
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+
+ament_target_dependencies(test_virtual_obstacle_layer
+  rclcpp
+  pluginlib
+  nav2_costmap_2d
+)
+
+install(DIRECTORY include/
+  DESTINATION include
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

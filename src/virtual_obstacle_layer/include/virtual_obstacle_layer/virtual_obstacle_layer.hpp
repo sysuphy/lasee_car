@@ -4,6 +4,7 @@
 #include "nav2_costmap_2d/layer.hpp"
 #include "nav2_costmap_2d/layered_costmap.hpp"
 #include "nav2_costmap_2d/costmap_layer.hpp"
+#include <memory> // 用 std::shared_ptr 代替 boost
 
 namespace virtual_obstacle_layer
 {
@@ -11,6 +12,12 @@ namespace virtual_obstacle_layer
     class VirtualObstacleLayer : public nav2_costmap_2d::CostmapLayer
     {
     public:
+        using Ptr = std::shared_ptr<VirtualObstacleLayer>;
+        using ConstPtr = std::shared_ptr<const VirtualObstacleLayer>;
+
+        VirtualObstacleLayer();
+        virtual ~VirtualObstacleLayer();
+
         void onInitialize() override;
         void updateBounds(
             double robot_x, double robot_y, double robot_yaw,

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>sticker_tracker_pkg</name>
+  <version>0.0.1</version>
+  <description>Sticker tracking node</description>
+  <maintainer email="your@email.com">zhugeliang</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <!-- package.xml -->
+  <exec_depend>opencv-python</exec_depend>  <!-- 对应cv2 -->
+  <exec_depend>pyserial</exec_depend>       <!-- 对应serial -->
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

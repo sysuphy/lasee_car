@@ -1,4 +1,4 @@
-#include "virtual_obstacle_layer/virtual_obstacle_layer.hpp"
+#include "../include/virtual_obstacle_layer/virtual_obstacle_layer.hpp"
 #include "pluginlib/class_list_macros.hpp"
 
 PLUGINLIB_EXPORT_CLASS(virtual_obstacle_layer::VirtualObstacleLayer, nav2_costmap_2d::Layer)
@@ -30,7 +30,7 @@ namespace virtual_obstacle_layer
         *min_x = 0.0;
         *min_y = 0.0;
         *max_x = 4.0;
-        *max_y = 4.0;
+        *max_y = 3.5;
     }
     void virtual_obstacle_layer::VirtualObstacleLayer::reset()
     {
@@ -46,7 +46,7 @@ namespace virtual_obstacle_layer
 
         // 地图边界参数
         double map_width = 4.0;
-        double map_height = 4.0;
+        double map_height = 3.5;
         double wall_thickness = 0.02; // 2cm
 
         // 圆形禁入区参数

@@ -1,0 +1,10 @@
+topics:
+  - name: navigation
+    topic: /cmd_vel_nav
+    timeout: 0.5
+    priority: 10
+
+  - name: laser_tracking
+    topic: /laser_tracking/cmd_vel
+    timeout: 0.1
+    priority: 100  # 高优先级，控制距离过近时停车

@@ -58,7 +58,7 @@ class OdomPublisher(Node):
     def read_serial(self):
         try:
             line = self.serial_port.readline().decode('utf-8').strip()
-            self.get_logger().info(f"Received line: [{line}]")  # ✅ 添加
+            #self.get_logger().info(f"Received line: [{line}]")  # ✅ 添加
 
             if not line:
                 return
@@ -93,7 +93,7 @@ class OdomPublisher(Node):
     def update_odometry(self, left_ticks, right_ticks, dt, now):
         delta_left = left_ticks - self.last_left_ticks
         delta_right = right_ticks - self.last_right_ticks
-        self.get_logger().info(f"编码器差值: left={delta_left}, right={delta_right}")
+        #self.get_logger().info(f"编码器差值: left={delta_left}, right={delta_right}")
 
         left_dist = 2 * math.pi * self.WHEEL_RADIUS * (delta_left / self.TICKS_PER_REV)
         right_dist = 2 * math.pi * self.WHEEL_RADIUS * (delta_right / self.TICKS_PER_REV)

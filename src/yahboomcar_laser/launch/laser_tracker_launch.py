@@ -16,17 +16,21 @@ def generate_launch_description():
     laser_tracker_node = Node(
         package='yahboomcar_laser',
         executable='laser_tracker',
+        output='screen',
     )
 
     bringup_node = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
-        get_package_share_directory('my_robot_serial_driver'), 'launch'),
-        '/serial_driver_launch.py'])
+        get_package_share_directory('yahboomcar_nav'), 'launch'),
+        '/navigation_dwb_launch.py'])
     )
+    
 
     launch_description = LaunchDescription([
-        lidar_node,
+        #lidar_node,
         laser_tracker_node,
-        bringup_node
+        bringup_node,
+       
         ]) 
+    
     return launch_description

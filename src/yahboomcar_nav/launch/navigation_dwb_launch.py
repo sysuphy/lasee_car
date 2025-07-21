@@ -79,9 +79,16 @@ def generate_launch_description():
         name='goal_sender',
         output='screen'
           )
-
+    
+    bringup_node = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+        get_package_share_directory('yahboomcar_nav'), 'launch'),
+        '/laser_bringup_launch.py'])
+    )
+    
 
     return LaunchDescription([
+        bringup_node,
         gui_arg,
         model_arg,
         DeclareLaunchArgument('use_sim_time', default_value=use_sim_time,
@@ -94,6 +101,8 @@ def generate_launch_description():
         
         joint_state_publisher_node,
         robot_state_publisher_node, 
+        rviz_arg,
+        rviz_node,
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 [nav2_bringup_dir, '/launch', '/bringup_launch.py']),
@@ -102,9 +111,6 @@ def generate_launch_description():
                 'use_sim_time': use_sim_time,
                 'params_file': nav2_param_path}.items(),
         ),
-        
-        rviz_arg,
-        rviz_node,
         #send_goal_node,
         
     ])

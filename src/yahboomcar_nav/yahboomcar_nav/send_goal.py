@@ -29,8 +29,8 @@ class GoalSender(Node):
         goal_msg.pose.header.stamp = self.get_clock().now().to_msg()
 
         # 设置导航目标位置（单位：米）
-        goal_msg.pose.pose.position.x = 3.0
-        goal_msg.pose.pose.position.y = 3.0
+        goal_msg.pose.pose.position.x = -1.7
+        goal_msg.pose.pose.position.y = 0.0
         #goal_msg.pose.pose.orientation.w = 1.0  # 朝向角度 = 0°
 
         self.get_logger().info(' 发送导航目标:x=3.0, y=3')
